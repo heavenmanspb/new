@@ -1,0 +1,35 @@
+{
+    "eslint.enable": true,
+    "eslint.format.enable": true,
+    "eslint.options": {
+        "extensions": [
+            ".js",
+            ".json"
+        ]
+    },
+    "eslint.validate": [
+        "javascript",
+        "typescript",
+        "json"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll": false,
+        "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "node_modules": false
+    },
+    "versionlens.logging.level": "debug",
+    "versionlens.suggestions.showOnStartup": true,
+    "versionlens.suggestions.showPrereleasesOnStartup": true,
+    "explorerExclude.backup": null,
+}

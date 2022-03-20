@@ -1,0 +1,78 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:eqeqeq-fix/recommended",
+    "standard"
+  ],
+  "plugins": [
+    "json-format"
+  ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "settings": {
+    "json/sort-package-json": "standard",
+    "json/ignore-files": [
+      "**/package-lock.json"
+    ],
+    "json/json-with-comments-files": [
+      "**/tsconfig.json",
+      ".vscode/**"
+    ]
+  },
+  "rules": {
+    "linebreak-style": 0,
+    "no-trailing-spaces": [
+      "error",
+      {
+        "ignoreComments": true
+      }
+    ],
+    "no-var": "error",
+    "semi": "error",
+    "indent": [
+      "error",
+      4
+    ],
+    "no-mixed-spaces-and-tabs": 0,
+    "no-tabs": [
+      "error",
+      {
+        "allowIndentationTabs": true
+      }
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "no-multi-spaces": "error",
+    "space-in-parens": "error",
+    "no-multiple-empty-lines": "error",
+    "prefer-const": "error",
+    "no-use-before-define": "error",
+    "rest-spread-spacing": [
+      "error",
+      "never"
+    ],
+    "camelcase": 0,
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "import/prefer-default-export": 0,
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "eqeqeq": [
+      "error",
+      "always"
+    ]
+  }
+}

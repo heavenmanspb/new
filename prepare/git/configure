@@ -1,0 +1,22 @@
+# git keys
+run => git bash
+ls -al ~/.ssh
+ssh-keygen -t rsa -b 4096 -C "mail@gmail.com"
+
+add key.pub to git
+
+# check connection
+ssh -T git@github.com
+
+# Setting up a new Git Repo
+## Create a new repository on the command line
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:heavenmanspb/<reponame>.git
+git push -u origin master
+
+## Push an existing repository from the command line
+git remote add origin git@github.com:heavenmanspb/<reponame>.git
+git push -u origin master
